@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4b918a13-cc34-4618-bb9f-7ae89df11955" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/img/gantt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/gantt_mini_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/news.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/scheduler.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/sports.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/views/gantt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/views/scheduler.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/wins.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/wins.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/dhtmlxgantt.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/dhtmlxgantt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/ext/dhtmlxgantt_csp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/ext/dhtmlxgantt_fullscreen.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/ext/dhtmlxgantt_marker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/ext/dhtmlxgantt_multiselect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/ext/dhtmlxgantt_quick_info.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/ext/dhtmlxgantt_tooltip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/locale/locale.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/locale/locale_ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/locale/locale_be.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/locale/locale_ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/locale/locale_cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/locale/locale_cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/locale/locale_da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/locale/locale_de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/locale/locale_el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/locale/locale_es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/locale/locale_fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/locale/locale_fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/locale/locale_he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/locale/locale_hu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/locale/locale_id.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/locale/locale_it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/locale/locale_jp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/locale/locale_kr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/locale/locale_nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/locale/locale_nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/locale/locale_no.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/locale/locale_pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/locale/locale_pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/locale/locale_ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/locale/locale_ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/locale/locale_si.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/locale/locale_sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/locale/locale_sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/locale/locale_tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/locale/locale_ua.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/skins/dhtmlxgantt_broadway.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/skins/dhtmlxgantt_meadow.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/skins/dhtmlxgantt_skyblue.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gantt/skins/dhtmlxgantt_terrace.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/dhtmlxscheduler.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/dhtmlxscheduler.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/dhtmlxscheduler_classic.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/dhtmlxscheduler_flat.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/dhtmlxscheduler_glossy.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/ext/dhtmlxscheduler_active_links.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/ext/dhtmlxscheduler_agenda_view.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/ext/dhtmlxscheduler_all_timed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/ext/dhtmlxscheduler_collision.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/ext/dhtmlxscheduler_container_autoresize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/ext/dhtmlxscheduler_cookie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/ext/dhtmlxscheduler_editors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/ext/dhtmlxscheduler_expand.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/ext/dhtmlxscheduler_html_templates.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/ext/dhtmlxscheduler_key_nav.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/ext/dhtmlxscheduler_layer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/ext/dhtmlxscheduler_limit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/ext/dhtmlxscheduler_map_view.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/ext/dhtmlxscheduler_minical.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/ext/dhtmlxscheduler_monthheight.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/ext/dhtmlxscheduler_multiselect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/ext/dhtmlxscheduler_multisource.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/ext/dhtmlxscheduler_mvc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/ext/dhtmlxscheduler_offline.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/ext/dhtmlxscheduler_outerdrag.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/ext/dhtmlxscheduler_pdf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/ext/dhtmlxscheduler_quick_info.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/ext/dhtmlxscheduler_readonly.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/ext/dhtmlxscheduler_recurring.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/ext/dhtmlxscheduler_serialize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/ext/dhtmlxscheduler_tooltip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/ext/dhtmlxscheduler_url.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/ext/dhtmlxscheduler_wp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/ext/dhtmlxscheduler_year_view.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs/but_repeat.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs/buttons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs/calendar.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs/clock_big.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs/clock_small.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs/collapse_expand_icon.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs/controls.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs/databg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs/databg_now.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs/export_ical.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs/export_pdf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs/images.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs/resize_dots.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_dhx_terrace/arrow_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_dhx_terrace/arrow_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_dhx_terrace/but_repeat.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_dhx_terrace/calendar.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_dhx_terrace/clock_big.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_dhx_terrace/clock_small.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_dhx_terrace/close_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_dhx_terrace/collapse_expand_icon.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_dhx_terrace/controls.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_dhx_terrace/databg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_dhx_terrace/databg_now.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_dhx_terrace/export_ical.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_dhx_terrace/export_pdf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_dhx_terrace/resize_dots.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_dhx_terrace/resizing.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_flat/agenda_bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_flat/arrow_left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_flat/arrow_right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_flat/but_repeat.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_flat/calendar.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_flat/clock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_flat/clock_big.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_flat/clock_small.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_flat/close_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_flat/collapse_expand_icon.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_flat/controls.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_flat/databg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_flat/databg_now.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_flat/export_ical.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_flat/export_pdf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_flat/resize_dots.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_flat/resizing.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_glossy/blue_tab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_glossy/blue_tab_wide.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_glossy/but_repeat.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_glossy/buttons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_glossy/calendar.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_glossy/clock_big.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_glossy/clock_small.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_glossy/collapse_expand_icon.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_glossy/controlls5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_glossy/databg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_glossy/databg_now.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_glossy/event-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_glossy/export_ical.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_glossy/export_pdf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_glossy/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_glossy/left-separator.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_glossy/left-time-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_glossy/lightbox.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_glossy/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_glossy/move.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_glossy/multi-days-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_glossy/second-top-days-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_glossy/top-days-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_glossy/top-separator.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_glossy/white_tab.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/imgs_glossy/white_tab_wide.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/locale_ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/locale_be.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/locale_ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/locale_cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/locale_cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/locale_da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/locale_de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/locale_el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/locale_en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/locale_es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/locale_fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/locale_fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/locale_he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/locale_hu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/locale_id.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/locale_it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/locale_jp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/locale_nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/locale_nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/locale_no.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/locale_pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/locale_pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/locale_ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/locale_ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/locale_si.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/locale_sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/locale_sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/locale_tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/locale_ua.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/recurring/locale_recurring_be.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/recurring/locale_recurring_cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/recurring/locale_recurring_cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/recurring/locale_recurring_da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/recurring/locale_recurring_de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/recurring/locale_recurring_el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/recurring/locale_recurring_en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/recurring/locale_recurring_es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/recurring/locale_recurring_fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/recurring/locale_recurring_fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/recurring/locale_recurring_it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/recurring/locale_recurring_nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/recurring/locale_recurring_nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/recurring/locale_recurring_pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/recurring/locale_recurring_pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/recurring/locale_recurring_ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/recurring/locale_recurring_ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/recurring/locale_recurring_sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/recurring/locale_recurring_sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/recurring/locale_recurring_ua.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/recurring/repeat_template_be.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/recurring/repeat_template_cn.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/recurring/repeat_template_de.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/recurring/repeat_template_el.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/recurring/repeat_template_en.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/recurring/repeat_template_es.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/recurring/repeat_template_fr.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/recurring/repeat_template_it.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/recurring/repeat_template_nl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/recurring/repeat_template_ro.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/recurring/repeat_template_ru.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/scheduler/locale/recurring/repeat_template_sk.html" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1WSTUdHvOjTjH1z042IuSMJcuig" />
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Загрузки/webix.trial.complete/webix/samples/60_pro/01_datatable" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4b918a13-cc34-4618-bb9f-7ae89df11955" name="Default Changelist" comment="" />
+      <created>1579142013007</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579142013007</updated>
+      <workItem from="1579142014108" duration="4234000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
