@@ -2,25 +2,46 @@
 <html>
 <head>
     <link rel="stylesheet" href="//cdn.webix.com/site/webix.css" type="text/css" media="screen" charset="utf-8">
-	<link rel="stylesheet" href="//cdn.webix.com/site/filemanager/filemanager.css" type="text/css" media="screen" charset="utf-8">
-	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="//cdn.webix.com/site/filemanager/filemanager.css" type="text/css" media="screen"
+          charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" charset="utf-8">
 
     <script src="//cdn.webix.com/site/webix.js" type="text/javascript" charset="utf-8"></script>
-	<script src="//cdn.webix.com/site/filemanager/filemanager.js" type="text/javascript"></script>
+    <script src="//cdn.webix.com/site/filemanager/filemanager.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+    <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/wins.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/data.js" type="text/javascript" charset="utf-8"></script>
 
-	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/wins.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/data.js" type="text/javascript" charset="utf-8"></script>
-
-	<!-- Material Design Icons -->
-	<link rel="stylesheet" type="text/css" href="//cdn.materialdesignicons.com/2.7.94/css/materialdesignicons.css">
+    <!-- Material Design Icons -->
+    <link rel="stylesheet" type="text/css" href="//cdn.materialdesignicons.com/2.7.94/css/materialdesignicons.css">
 
     <title>Desktop App</title>
 
- </head>
- <body>
- <script type="text/javascript" charset="utf-8">
-	 desktopApp.init();
- </script>
- </body>
- </html>
+</head>
+<body background="img/wallpaper.jpg">
+<script type="text/javascript" charset="utf-8">
+    desktopApp.wins.hideAllWindows();
+    function checkform() {
+        let myForm = "admin";
+        let pass = $("#passwordI").val();
+        let name = $("#nameI").val();
+        if (pass == "password" && name == "admin") {
+            document.getElementById(2).style.display ="none";
+            desktopApp.init();
+        } else {
+            alert("Invalid Login");
+        }
+    }
+</script>
+<div id="2" class="login">
+<form name="admin" method="post"  class="login_main">
+    <h1>Please sign in</h1>
+    <p><input class="login_input" type="text" name="nameI" id="nameI" value="" placeholder="Login"></p>
+    <p><input class="login_input" type="password" name="passwordI" id="passwordI" value="" placeholder="Password"></p>
+    <p class="submit"><input class="login_button" type="button" onClick="checkform()" name="commit" value="Login"></p>
+</form>
+</div>
+
+</body>
+</html>

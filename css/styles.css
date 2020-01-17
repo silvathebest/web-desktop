@@ -1,6 +1,7 @@
 body{
-	background-image: url("../img/wallpaper.jpg");
+	background-image: url("../img/wallpaper.jpg") ;
 	background-size: 100% 100%;
+	background-repeat: no-repeat;
 }
 .desktop-layout {
     background: transparent;
@@ -354,7 +355,49 @@ body{
 .sing-in-form button{
 	font-size: 16px;
 }
+.login_main{
+	position: center;
+	width: 100%;
+	height: 100%;
+	max-width: 330px;
+	padding: 15px;
+	margin: auto;
+	text-align: center!important;
+}
 
+.login{
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	margin: 20% 0 20% 0;
+	height: 100%;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	font-size: 1rem;
+}
+
+.login_input{
+	position: relative;
+	box-sizing: border-box;
+	height: auto;
+	padding: 10px;
+	font-size: 16px;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+}
+
+.login_button{
+	color: #fff;
+	background-color: #007bff;
+	border-color: #007bff;
+	border: 1px solid transparent;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: .25rem;
+}
 .dhx_cal_light{
 	border-radius: 0 !important;
 }
