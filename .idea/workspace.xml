@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b918a13-cc34-4618-bb9f-7ae89df11955" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/wins.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/wins.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +21,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1WSTUdHvOjTjH1z042IuSMJcuig" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -50,7 +55,8 @@
       <updated>1579142013007</updated>
       <workItem from="1579142014108" duration="4234000" />
       <workItem from="1579132880076" duration="1775000" />
-      <workItem from="1579246858090" duration="4123000" />
+      <workItem from="1579246858090" duration="7155000" />
+      <workItem from="1579351192800" duration="3084000" />
     </task>
     <servers />
   </component>

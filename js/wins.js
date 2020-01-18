@@ -143,7 +143,7 @@ if(window.desktopApp)
 
 			}
 			$$(winId).show();
-			if(name == "scheduler" && $$("scheduler").getScheduler())
+			if(name == "Antibiotics" && $$("antibiotics").getAntibiotics())
 				$$("scheduler").getScheduler().updateView();
 			else if(name == "gantt" && window.gantt)
 				gantt.render();

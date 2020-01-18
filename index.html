@@ -20,14 +20,15 @@
 
 </head>
 <body background="img/wallpaper.jpg">
-<script type="text/javascript" charset="utf-8">
+<!--<script type="text/javascript" charset="utf-8">
     desktopApp.wins.hideAllWindows();
+
     function checkform() {
         let myForm = "admin";
         let pass = $("#passwordI").val();
         let name = $("#nameI").val();
         if (pass == "password" && name == "admin") {
-            document.getElementById(2).style.display ="none";
+            document.getElementById(2).style.display = "none";
             desktopApp.init();
         } else {
             alert("Invalid Login");
@@ -35,13 +36,55 @@
     }
 </script>
 <div id="2" class="login">
-<form name="admin" method="post"  class="login_main">
-    <h1>Please sign in</h1>
-    <p><input class="login_input" type="text" name="nameI" id="nameI" value="" placeholder="Login"></p>
-    <p><input class="login_input" type="password" name="passwordI" id="passwordI" value="" placeholder="Password"></p>
-    <p class="submit"><input class="login_button" type="button" onClick="checkform()" name="commit" value="Login"></p>
-</form>
-</div>
+    <form name="admin" method="post" class="login_main">
+        <h1>Please sign in</h1>
+        <p><input class="login_input" type="text" name="nameI" id="nameI" value="" placeholder="Login"></p>
+        <p><input class="login_input" type="password" name="passwordI" id="passwordI" value="" placeholder="Password">
+        </p>
+        <p class="submit"><input class="login_button" type="button" onClick="checkform()" name="commit" value="Login">
+        </p>
+    </form>
+</div>-->
+<script>
+    webix.ui({
+        rows: [
+            {
+                view: "datatable",
+                id: "table",
+                columns: [
+                    {id: "title", header: "Name", width: 100, editor: "text"},
+                    {id: "year", header: "Surname", width: 100, editor: "text"},
+                    {id: "votes", header: "Phone", width: 100, editor: 'text'}
+                ],
+                data: [
+                    {id: 1, title: "The Shawshank Redemption", year: 1994, votes: 678790},
+                    {id: 2, title: "The Godfather", year: 1972, votes: 511495},
+                    {id: 3, title: "The Godfather: Part II", year: 1974, votes: 319352},
+                    {id: 4, title: "Pulp fiction", year: 1994, votes: 533848}
+
+                ],
+                editable: true,
+                editaction: "click",
+                height: 300,
+                width: 525,
+            },
+            {
+                width: 250,
+                cols: [{
+                    view: "button",
+                    width: 300,
+                    label: "Add Row",
+                    click: function () {
+                        var data = {name: "", surname: "", phone: "1"}
+                        $$('table').editStop();
+                        var id = $$('table').add(data, 0);
+                        $$('table').editRow(id)
+                    }
+                }]
+            },
+        ]
+    });
+</script>
 
 </body>
 </html>
