@@ -15,12 +15,12 @@
 
 	if ($operation == "insert"){
 		//adding new record
-		$db->query("INSERT INTO users(name, phone, surname, votes) VALUES('$name', '$phone', '$surname')");
+		$db->query("INSERT INTO users(name, surname, phone) VALUES('$name', '$surname', '$phone')");
 		echo '{ "id":"'.$id.'", "status":"success", "newid":"'.$db->lastInsertRowID().'" }';
 
 	} else if ($operation == "update"){
 		//updating record
-		$db->query("UPDATE users SET name='$name', phone='$phone', surname='$surname', WHERE id='$id'");
+		$db->query("UPDATE users SET name='$name',surname='$surname', phone='$phone'  WHERE id='$id'");
 		echo '{ "id":"'.$id.'", "status":"success" }';
 
 	} else if ($operation == "delete"){

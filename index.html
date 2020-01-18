@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="//cdn.webix.com/site/webix.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/webix.css" type="text/css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="//cdn.webix.com/site/filemanager/filemanager.css" type="text/css" media="screen"
           charset="utf-8">
     <link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" charset="utf-8">
 
-    <script src="//cdn.webix.com/site/webix.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/webix.js" type="text/javascript" charset="utf-8"></script>
     <script src="//cdn.webix.com/site/filemanager/filemanager.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
     <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
@@ -50,32 +50,38 @@
         rows: [
             {
                 view: "datatable",
-                id: "table",
                 columns: [
-                    {id: "title", header: "Name", width: 100, editor: "text"},
-                    {id: "year", header: "Surname", width: 100, editor: "text"},
-                    {id: "votes", header: "Phone", width: 100, editor: 'text'}
+                    {id: "name", header: "Name", width: 300, editor: "text"},
+                    {id: "surname", header: "Surname", width: 300, editor: "text"},
+                    {id: "phone", header: "Phone", width: 300, editor: 'text'}
                 ],
-                autoheight:true,
-                autowidth:true,
-                select:"row", editable:true, editaction:"dblclick",
+                autoheight: true,
+                autowidth: true,
+                select: "row", editable: true, editaction: "dblclick",
 
                 save: "server/datatable_save.php",
                 url: "server/datatable.php"
             },
             {
-                width: 250,
-                cols: [{
-                    view: "button",
-                    width: 300,
-                    label: "Add Row",
-                    click: function () {
-                        var data = {name: "", surname: "", phone: "1"}
-                        $$('table').editStop();
-                        var id = $$('table').add(data, 0);
-                        $$('table').editRow(id)
-                    }
-                }]
+                view: "toolbar", elements: [
+                    {
+                        view: "button", value: "Add Row", click: function () {
+                            $$('$datatable1').add({
+                                name: 99,
+                                surname: "",
+                                phone: "2012",
+                            });
+                        }
+                    },
+                    {
+                        view: "button", value: "Delete Row", click: function () {
+                            var id = $$('$datatable1').getSelectedId();
+                            if (id)
+                                $$('$datatable1').remove(id);
+                        }
+                    },
+                    {}
+                ]
             },
         ]
     });
