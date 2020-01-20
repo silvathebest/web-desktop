@@ -202,15 +202,15 @@ if (window.desktopApp)
                     return [
                         "Contacts",
                         function () {
-                            $$('filemanager_win').hide();
-                            webix.html.removeCss($$("filemanager_button").$view, "active");
+                            $$('contacts_win').hide();
+                            webix.html.removeCss($$("contacts_button").$view, "active");
                         },
                         function () {
                             $$("contacts_win").config.fullscreen = !$$("contacts_win").config.fullscreen;
                             $$("contacts_win").resize();
 
                         }, function () {
-                            $$("toolbar").removeView("filemanager_button");
+                            $$("toolbar").removeView("contacts_button");
                             $$('contacts_win').hide();
                             desktopApp.buttonCount--;
                         }
@@ -218,24 +218,25 @@ if (window.desktopApp)
                 },
                 body: function () {
                     return {
-                      id:"contacts",
-                      rows:[
-                        {view: "datatable",
-                        autoheight: true,
-                        autowidth: true,
-                        columns: [
-                          {id: "name", header: "Name", width: 300, editor: "text"},
-                          {id: "surname", header: "Surname", width: 300, editor: "text"},
-                          {id: "phone", header: "Phone", width: 300, editor: 'text'}
-                        ],
+                        id: "contacts",
+                        rows: [
+                            {
+                                view: "datatable",
+                                autoheight: true,
+                                autowidth: true,
+                                columns: [
+                                    {id: "name", header: "Name", width: 200, editor: "text"},
+                                    {id: "surname", header: "Surname", width: 200, editor: "text"},
+                                    {id: "phone", header: "Phone", width: 200, editor: 'text'}
+                                ],
 
-                        select: "row", editable: true, editaction: "dblclick",
-                        autoheight: true,
-                        autowidth: true,
-                        save: "server/datatable_save.php",
-                        url: "server/datatable.php"
-                      },
-                         {
+                                select: "row", editable: true, editaction: "dblclick",
+                                autoheight: true,
+                                autowidth: true,
+                                save: "server/datatable_save.php",
+                                url: "server/datatable.php"
+                            },
+                            {
                                 view: "toolbar", elements: [
                                     {
                                         view: "button", value: "Добавить", click: function () {
@@ -256,14 +257,86 @@ if (window.desktopApp)
                                     {}
                                 ]
                             },
-                    ]
+                        ]
                     }
                 },
-                events:{
-    					onBeforeShow: function(){
-    						desktopApp.beforeWinShow("contacts");
-    					}
-				}
+                events: {
+                    onBeforeShow: function () {
+                        desktopApp.beforeWinShow("contacts");
+                    }
+                }
+            },
+            tablets: {
+                css: "no_border ",
+                toolbar: function () {
+                    return [
+                        "Tablets",
+                        function () {
+                            $$('tablets_win').hide();
+                            webix.html.removeCss($$("tablets_button").$view, "active");
+                        },
+                        function () {
+                            $$("tablets_win").config.fullscreen = !$$("tablets_win").config.fullscreen;
+                            $$("tablets_win").resize();
+
+                        }, function () {
+                            $$("toolbar").removeView("tablets_button");
+                            $$('tablets_win').hide();
+                            desktopApp.buttonCount--;
+                        }
+                    ]
+                },
+                body: function () {
+                    return {
+                        id: "tablets",
+                        rows: [
+                            {
+                                view: "datatable",
+                                autoheight: true,
+                                autowidth: true,
+                                columns: [
+                                    {id: "title", header: "Title", width: 250, editor: "text"},
+                                    {id: "type", header: "Type", width: 200, editor: "text"},
+                                    {id: "manufacturer", header: "Manufacturer", width: 200, editor: 'text'},
+                                    {id: "price", header: "Price", width: 150, editor: 'text'}
+                                ],
+
+                                select: "row", editable: true, editaction: "dblclick",
+                                autoheight: true,
+                                autowidth: true,
+                                save: "server/datatable_tablets_save.php",
+                                url: "server/datatable_tablets.php"
+                            },
+                            {
+                                view: "toolbar", elements: [
+                                    {
+                                        view: "button", value: "Добавить", click: function () {
+                                            $$('$datatable1').add({
+                                                title: "",
+                                                type: "",
+                                                manufacturer: "",
+                                                price: "",
+                                            });
+                                        }
+                                    },
+                                    {
+                                        view: "button", value: "Удалить", click: function () {
+                                            var id = $$('$datatable1').getSelectedId();
+                                            if (id)
+                                                $$('$datatable1').remove(id);
+                                        }
+                                    },
+                                    {}
+                                ]
+                            },
+                        ]
+                    }
+                },
+                events: {
+                    onBeforeShow: function () {
+                        desktopApp.beforeWinShow("tablets");
+                    }
+                }
             },
             filemanager: {
                 css: "no_border ",

@@ -9,76 +9,22 @@ var small_film_set = [
 
 var desktop_icons = [
     {id: "filemanager", title: "Filemanager", image: "img/filemanager.png", win: "filemanager_win"},
-  {id: "contacts", title: "Contacts", image: "img/filemanager.png", win: "contacts_win"}
 ];
 
 
 var startmenu_icons = [
     {id: "filemanager", title: "Filemanager", image: "img/filemanager.png", win: "filemanager_win"},
-    {id: "contacts", title: "Contacts", image: "img/filemanager.png", win: "contacts_win"}
+    {id: "contacts", title: "Contacts", image: "img/contacts.png", win: "contacts_win"},
+    {id: "tablets", title: "Tablets", image: "img/tablets.png", win: "tablets_win"}
 ];
 
 var start_menu = {
     id: "1", value: "Start", submenu: [
         "Filemanager",
-        "Contacts"
+        "Contacts",
+        "Tablets"
     ]
 };
-
-var tasks = {
-    data: [
-        {
-            id: 1, text: "Project #1", start_date: "01-11-2015", duration: 9, order: 10,
-            progress: 0.4, open: true
-        },
-        {
-            id: "1.1", text: "Task #1.1", start_date: "02-11-2015", duration: 2, order: 10,
-            progress: 0.6, parent: 1
-        },
-        {
-            id: "1.2", text: "Task #1.2", start_date: "05-11-2015", duration: 3, order: 20,
-            progress: 0.6, parent: 1
-        },
-        {
-            id: "1.3", text: "Task #1.3", start_date: "07-11-2015", duration: 3, order: 20,
-            progress: 0.2, parent: 1
-        },
-        {
-            id: 2, text: "Project #2", start_date: "02-11-2015", duration: 9, order: 10,
-            progress: 0.4, open: true
-        },
-        {
-            id: "2.1", text: "Task #2.1", start_date: "03-11-2015", duration: 3, order: 10,
-            progress: 0.5, parent: 2
-        },
-        {
-            id: "2.2", text: "Task #2.2", start_date: "06-11-2015", duration: 5, order: 20,
-            progress: 0.2, parent: 2
-        },
-        {
-            id: 3, text: "Project #3", start_date: "11-11-2015", duration: 10, order: 10,
-            progress: 0, open: true
-        },
-        {
-            id: "3.1", text: "Task #3.1", start_date: "12-11-2015", duration: 2, order: 10,
-            progress: 0.6, parent: 3
-        },
-        {
-            id: "3.2", text: "Task #3.2", start_date: "15-11-2015", duration: 5, order: 20,
-            progress: 0.6, parent: 3
-        }
-    ],
-    links: [
-        {id: 1, source: 1, target: "1.1", type: "1"},
-        {id: 2, source: "1.1", target: "1.2", type: "0"},
-        {id: 4, source: 2, target: "2.1", type: "1"},
-        {id: 5, source: "2.1", target: "2.2", type: "0"},
-        {id: 6, source: 3, target: "3.1", type: "1"},
-        {id: 7, source: "3.1", target: "3.2", type: "0"},
-        {id: 8, source: "3.2", target: "3.3", type: "1"}
-    ]
-};
-
 
 var filemanagerData = [
     {
@@ -369,7 +315,7 @@ var winmenu_1 = [
 
 ];
 var winmenu_2 = [
-    {value: "Antibiotics", id: "email", icon: "tablet", color: "#297acc", x: 2, y: 1},
+    {value: "Tablets", id: "tablets", icon: "tablet", color: "#297acc", x: 2, y: 1},
 ];
 
 
