@@ -8,17 +8,20 @@ var small_film_set = [
 ];
 
 var desktop_icons = [
-    {id: "filemanager", title: "Filemanager", image: "img/filemanager.png", win: "filemanager_win"}
+    {id: "filemanager", title: "Filemanager", image: "img/filemanager.png", win: "filemanager_win"},
+  {id: "contacts", title: "Contacts", image: "img/filemanager.png", win: "contacts_win"}
 ];
 
 
 var startmenu_icons = [
-    {id: "filemanager", title: "Filemanager", image: "img/filemanager.png", win: "filemanager_win"}
+    {id: "filemanager", title: "Filemanager", image: "img/filemanager.png", win: "filemanager_win"},
+    {id: "contacts", title: "Contacts", image: "img/filemanager.png", win: "contacts_win"}
 ];
 
 var start_menu = {
     id: "1", value: "Start", submenu: [
-        "Filemanager"
+        "Filemanager",
+        "Contacts"
     ]
 };
 
@@ -362,7 +365,7 @@ var filemanagerData = [
     }
 ];
 var winmenu_1 = [
-    {value: "Contacts", id: "filemanager", icon: "contacts", color: "#107c10", x: 1, y: 1},
+    {value: "Contacts", id: "contacts", icon: "contacts", color: "#107c10", x: 1, y: 1},
 
 ];
 var winmenu_2 = [
