@@ -149,8 +149,6 @@ if (window.desktopApp)
                         rows: [
                             {
                                 view: "datatable",
-                                autoheight: true,
-                                autowidth: true,
                                 columns: [
                                     {id: "name", header: "Name", width: 200, editor: "text"},
                                     {id: "surname", header: "Surname", width: 200, editor: "text"},
@@ -158,8 +156,6 @@ if (window.desktopApp)
                                 ],
 
                                 select: "row", editable: true, editaction: "dblclick",
-                                autoheight: true,
-                                autowidth: true,
                                 save: "server/datatable_save.php",
                                 url: "server/datatable.php"
                             },
@@ -218,8 +214,6 @@ if (window.desktopApp)
                         rows: [
                             {
                                 view: "datatable",
-                                autoheight: true,
-                                autowidth: true,
                                 columns: [
                                     {id: "title", header: "Title", width: 250, editor: "text"},
                                     {id: "type", header: "Type", width: 200, editor: "text"},
@@ -227,9 +221,6 @@ if (window.desktopApp)
                                     {id: "price", header: "Price", width: 150, editor: 'text'}
                                 ],
                                 select: "row", editable: true, editaction: "dblclick",
-                                navigation:true,
-                                autoheight: true,
-                                autowidth: true,
                                 save: "server/datatable_tablets_save.php",
                                 url: "server/datatable_tablets.php"
                             },
