@@ -11,7 +11,6 @@ desktopApp = {
 		webix.attachEvent("onFocusChange", function(view){
 			if(view){
 				var win = view.getTopParentView();
-				// filemanager case
 				if(win.getParentView())
 					win = win.getParentView().getTopParentView();
 				var id = win.config.id;
@@ -93,7 +92,7 @@ desktopApp = {
 	signOut: function(){
 		desktopApp.wins.hideAllWindows();
 		webix.$$("toolbar").hide();
-		webix.$$("sign-in").show();
+		document.location.reload(true);
 	},
 	createToolbar: function(){
 		webix.ui({
@@ -356,10 +355,6 @@ desktopApp = {
 				on:{
 					onItemClick:function(){
 						$$(winId).show();
-						if(winId == "scheduler_win" && $$("scheduler").getScheduler())
-							$$("scheduler").getScheduler().updateView();
-						else if(winId == "gantt_win" && window.gantt)
-							gantt.render();
 
 						desktopApp.deleteActiveBg();
 						webix.html.addCss(btn.$view, "active");

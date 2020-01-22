@@ -19,7 +19,7 @@
   <title>Desktop App</title>
 
 </head>
-<body background="img/wallpaper.jpg">
+<body>
   <script type="text/javascript" charset="utf-8">
   desktopApp.wins.hideAllWindows();
 
@@ -27,11 +27,13 @@
     let myForm = "admin";
     let pass = $("#passwordI").val();
     let name = $("#nameI").val();
-    if (pass == "1" && name == "1") {
+    if (pass == "password" && name == "admin") {
       document.getElementById(2).style.display = "none";
       desktopApp.init();
-    } else {
-      alert("Invalid Login");
+    } else if(name !="admin"){
+      alert("Invalid Login!");
+    }else if(pass !="password"){
+      alert("Invalid password!");
     }
   }
 </script>
@@ -45,84 +47,5 @@
     </p>
   </form>
 </div>
-<!--<script>
-
-webix.ui({
-rows: [ {
-view : "toolbar",
-elements : [
-{
-type : "clean",
-cols : [
-{
-view : "icon",
-icon : "envelope-o",
-click:add,
-},
-]
-}
-]
-}]
-});
-
-function add() {
-var win = {
-view:"window",
-id:"contacts",
-autoheight: true,
-autowidth: true,
-head:{
-view:"toolbar",
-cols:[
-{ template:"Contacts" },
-{ view:"button",    width: 36,
-height: 20, type:"image", image:"img/close_button.png", css: "hide-button webix_transparent", click:"$$('contacts').close();"}
-],
-},
-move:true,
-body:{
-rows:[
-{view: "datatable",
-columns: [
-{id: "name", header: "Name", width: 300, editor: "text"},
-{id: "surname", header: "Surname", width: 300, editor: "text"},
-{id: "phone", header: "Phone", width: 300, editor: 'text'}
-],
-autoheight: true,
-autowidth: true,
-select: "row", editable: true, editaction: "dblclick",
-
-save: "server/datatable_save.php",
-url: "server/datatable.php"
-},
-{
-view: "toolbar", elements: [
-{
-view: "button", value: "Add Row", click: function () {
-$$('$datatable1').add({
-name: "",
-surname: "",
-phone: "+7",
-});
-}
-},
-{
-view: "button", value: "Delete Row", click: function () {
-var id = $$('$datatable1').getSelectedId();
-if (id)
-$$('$datatable1').remove(id);
-}
-},
-{}
-]
-},
-]
-}
-}
-webix.ui(win);
-$$("contacts").show();
-}
-</script>-->
-
 </body>
 </html>

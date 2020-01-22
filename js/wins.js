@@ -59,64 +59,6 @@ if (window.desktopApp)
             }
 
         },
-        showEmptyApp: function (obj) {
-            var winId = obj.id + "_win";
-
-            if (!$$(winId)) {
-                var c = desktopApp.wins.getVisibleWinCount();
-
-                webix.ui({
-                    view: "window",
-                    id: winId,
-                    css: "popup-window-custom " + obj.$css || "",
-                    position: desktopApp.wins.getPosition,
-                    left: document.documentElement.clientWidth / 2 - 400 + 15 * c,
-                    top: document.documentElement.clientHeight / 2 - 225 - 40 + 25 * c,
-                    move: true,
-                    resize: true,
-                    toFront: true,
-                    height: 450,
-                    width: 800,
-                    head: this.ui.toolbar(
-                        obj.value + " (Not implemented) ",
-                        function () {
-                            $$(winId).hide();
-                            webix.html.removeCss($$(obj.id + "_button").$view, "active");
-                        }, function () {
-                            $$(winId).config.fullscreen = !$$(winId).config.fullscreen;
-                            $$(winId).resize();
-                            $$(winId).config.left = 0;
-                            $$(winId).config.top = 0;
-                        }, function () {
-                            $$("toolbar").removeView(obj.id + "_button");
-                            $$(winId).hide();
-                            desktopApp.buttonCount--;
-                        }
-                    ),
-                    body: {
-                        css: "empty-app",
-                        template: function (obj) {
-                            var icon = "";
-                            if (obj.img) {
-                                icon = "<img src='" + obj.img + "' align='center'>";
-                            } else if (obj.icon) {
-                                icon = "<span class='webix_icon mdi mdi-" + obj.icon + "'></span>";
-                            }
-                            return "<div class='empty-app-inner' style='background-color:" + obj.color + ";'>" + icon + "</div>"
-                        },
-                        data: obj
-                    },
-                    on: {
-                        onBeforeShow: function () {
-                            desktopApp.beforeWinShow(obj);
-                        }
-                    }
-                })
-            }
-            $$(winId).show();
-            $$("winmenu").hide();
-            desktopApp.wins.setActiveStyle(winId);
-        },
         showApp: function (name) {
             var winId = name + "_win";
             var c = desktopApp.wins.getVisibleWinCount();
@@ -141,10 +83,6 @@ if (window.desktopApp)
 
             }
             $$(winId).show();
-            if (name == "Datatable" && $$("datatable").getAntibiotics())
-                $$("datatable").updateView();
-            else if (name == "gantt" && window.gantt)
-                gantt.render();
             desktopApp.wins.setActiveStyle(winId);
         },
         ui: {
@@ -169,17 +107,6 @@ if (window.desktopApp)
                             css: "hide-button webix_transparent",
                             on: {
                                 onItemClick: onHide
-                            }
-                        },
-                        {
-                            view: "button",
-                            type: "image",
-                            image: "img/resize_button.png",
-                            width: 36,
-                            height: 20,
-                            css: "resize-button webix_transparent",
-                            on: {
-                                onItemClick: onMinMax
                             }
                         },
                         {
@@ -278,7 +205,6 @@ if (window.desktopApp)
                         function () {
                             $$("tablets_win").config.fullscreen = !$$("tablets_win").config.fullscreen;
                             $$("tablets_win").resize();
-
                         }, function () {
                             $$("toolbar").removeView("tablets_button");
                             $$('tablets_win').hide();
@@ -300,8 +226,8 @@ if (window.desktopApp)
                                     {id: "manufacturer", header: "Manufacturer", width: 200, editor: 'text'},
                                     {id: "price", header: "Price", width: 150, editor: 'text'}
                                 ],
-
                                 select: "row", editable: true, editaction: "dblclick",
+                                navigation:true,
                                 autoheight: true,
                                 autowidth: true,
                                 save: "server/datatable_tablets_save.php",
@@ -311,7 +237,7 @@ if (window.desktopApp)
                                 view: "toolbar", elements: [
                                     {
                                         view: "button", value: "Добавить", click: function () {
-                                            $$('$datatable1').add({
+                                            $$('$datatable2').add({
                                                 title: "",
                                                 type: "",
                                                 manufacturer: "",
@@ -321,9 +247,9 @@ if (window.desktopApp)
                                     },
                                     {
                                         view: "button", value: "Удалить", click: function () {
-                                            var id = $$('$datatable1').getSelectedId();
+                                            var id = $$('$datatable2').getSelectedId();
                                             if (id)
-                                                $$('$datatable1').remove(id);
+                                                $$('$datatable2').remove(id);
                                         }
                                     },
                                     {}
@@ -335,44 +261,6 @@ if (window.desktopApp)
                 events: {
                     onBeforeShow: function () {
                         desktopApp.beforeWinShow("tablets");
-                    }
-                }
-            },
-            filemanager: {
-                css: "no_border ",
-                toolbar: function () {
-                    return [
-                        "Filemanager",
-                        function () {
-                            $$('filemanager_win').hide();
-                            webix.html.removeCss($$("filemanager_button").$view, "active");
-                        },
-                        function () {
-                            $$("filemanager_win").config.fullscreen = !$$("filemanager_win").config.fullscreen;
-                            $$("filemanager_win").resize();
-
-                        }, function () {
-                            $$("toolbar").removeView("filemanager_button");
-                            $$('filemanager_win').hide();
-                            desktopApp.buttonCount--;
-                        }
-                    ]
-                },
-                body: function () {
-                    return {
-                        view: "filemanager",
-                        id: "filemanager",
-                        disabledHistory: true,
-                        data: filemanagerData
-                    }
-                },
-                events: {
-                    onBeforeShow: function () {
-                        desktopApp.beforeWinShow("filemanager");
-                    },
-                    onShow: function () {
-                        if (!$$("filemanager").$$("tree").getSelectedId())
-                            $$("filemanager").$$("tree").select($$("filemanager").getFirstChildId(0));
                     }
                 }
             }
